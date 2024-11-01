@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Cat energy - Функциональное питание для котов</title>
   </head>
-  <body>
-    <h1>Hello world</h1>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+  <body class="page__body">
+    <header class="page__header page-header">
+      <nav class="page-header__nav">
+        <a class="page-header__logo logo">
+          <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Cat energy">
+          <img class="logo__sign" src="img/logo-mobile-2.svg" width="101" height="18" alt="" aria-hidden="true">
+        </a>
 
+        <button class="page-header__toggler" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="page-header__menu site-menu">
+          <li class="site-menu__item site-menu__item--active">
+            <a class="site-menu__link">Главная</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="./form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
