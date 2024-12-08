@@ -1,0 +1,24 @@
+.catalog-sections__item {
+  padding: 20px;
+  background-color: $color-gray-50;
+}
+
+.catalog-sections__heading {
+  font-family: $font-heading;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-sections__text {
+  color: $color-gray-700;
+}
+
+.catalog-sections__link {
+  font-family: $font-heading;
+  color: $color-black;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
