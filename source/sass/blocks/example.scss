@@ -1,6 +1,14 @@
 .example {
   padding: 20px;
   background-color: $color-gray-100;
+
+  .exapmple__container {
+    @media (min-width: $breakpoint-large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+  }
 }
 
 .example__text {
