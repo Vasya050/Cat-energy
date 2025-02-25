@@ -41,13 +41,11 @@
   }
 }
 
-// .site-menu--main .site-menu__item--active {
-//   @media (min-width: $breakpoint-large) {
-//     &::after {
-//       background-color: $color-white;
-//     }
-//   }
-// }
+.site-menu--main .site-menu__item--active {
+    &::after {
+      background-color: $color-white;
+    }
+}
 
 .site-menu__link {
   display: block;
@@ -68,8 +66,8 @@
   }
 }
 
-// .site-menu--main .site-menu__link {
-//   @media (min-width: $breakpoint-large) {
-//     color: $color-white;
-//   }
-// }
+.site-menu--main .site-menu__link {
+  @media (min-width: $breakpoint-large) {
+    color: $color-white;
+  }
+}
