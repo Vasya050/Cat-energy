@@ -792,19 +792,19 @@ img {
 }
 
 .process__item--leaf::before {
-  background-image: url("../../img/icons/leaf.svg");
+  background-image: url("../img/icons/leaf.svg");
 }
 
 .process__item--powder::before {
-  background-image: url("../../img/icons/powder.svg");
+  background-image: url("../img/icons/powder.svg");
 }
 
 .process__item--meal::before {
-  background-image: url("../../img/icons/meal.svg");
+  background-image: url("../img/icons/meal.svg");
 }
 
 .process__item--weight::before {
-  background-image: url("../../img/icons/weight.svg");
+  background-image: url("../img/icons/weight.svg");
 }
 
 .promo {
