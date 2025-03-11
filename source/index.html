@@ -95,33 +95,47 @@
       <section class="page-main__section example">
         <div class="exapmple__container container">
           <div class="example__content">
-            <h2 class="page-main__heading">Живой пример</h2>
+            <h2 class="page-main__heading example__heading">Живой пример</h2>
 
             <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-              изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
 
             <dl class="example__list">
-              <dt class="example__title">снижение веса</dt>
-              <dd class="example__definition">5 кг</dd>
+              <div class="example__item">
+                <dt class="example__title">снижение веса</dt>
+                <dd class="example__definition">5 кг</dd>
+              </div>
 
-              <dt class="example__title">затрачено времени</dt>
-              <dd class="example__definition">60 дней</dd>
+              <div class="example__item">
+                <dt class="example__title">затрачено времени</dt>
+                <dd class="example__definition">60 дней</dd>
+              </div>
             </dl>
 
-            <p class="example__spending">Затраты на питание: 15 000 руб.</p>
+            <p class="example__spending">
+              <span>Затраты на питание:</span>
+              <span>15&nbsp;000&nbsp;руб.</span>
+            </p>
           </div>
+
           <div class="example__view">
             <div class="example__images">
-              <img class="example__image" src="img/before-mobile.png" width="280" height="232"
-                alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
-              <img class="example__image" src="img/after-mobile.png" width="243" height="232"
-                alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+              <div class="example__image example__image--before example__image--active">
+                <img src="img/before-mobile.png" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+              </div>
+              <div class="example__image example__image--after">
+                <img src="img/after-mobile.png" width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+              </div>
             </div>
 
-            <div class="example__switcher switcher">
+            <div class="example__switcher switcher switcher--before">
               <button class="switcher__button" type="button">Было</button>
+
+              <div class="switcher__toggler"></div>
+
+              <input class="switcher__bar" type="range" value="50" min="17" max="83">
+
               <button class="switcher__button" type="button">Стало</button>
             </div>
           </div>
