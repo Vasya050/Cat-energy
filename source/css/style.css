@@ -357,11 +357,22 @@ img {
 }
 
 .contacts__container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 26px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (min-width: 768px) {
+  .contacts__container {
+    width: 708px;
+  }
+}
 
 .contacts__heading {
+  margin: 0;
+  padding-right: 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -369,8 +380,16 @@ img {
 }
 
 .contacts__adress {
+  margin: 0;
   color: #444444;
   line-height: 20px;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 362px;
+  border: none;
 }
 
 .container {
