@@ -344,7 +344,7 @@ img {
   height: 10px;
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  background-image: url("../../img/icons/arrow.svg");
+  background-image: url("../img/icons/arrow.svg");
 }
 .catalog-sections__link:hover::after {
   width: 32px;
