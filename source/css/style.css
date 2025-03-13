@@ -356,6 +356,19 @@ img {
   width: 32px;
 }
 
+@media (min-width: 1300px) {
+  .contacts {
+    position: relative;
+    z-index: 0;
+    min-height: 400px;
+    padding: 40px 0 52px;
+    display: grid;
+    grid-template-columns: 1220px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .contacts__container {
   width: 280px;
   margin-right: auto;
@@ -367,6 +380,19 @@ img {
 @media (min-width: 768px) {
   .contacts__container {
     width: 708px;
+    padding: 56px 40px;
+    grid-template-columns: 172px 172px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1300px) {
+  .contacts__container {
+    position: relative;
+    z-index: 1;
+    width: 565px;
+    margin: 0;
+    padding: 56px 80px;
+    background-color: #ffffff;
   }
 }
 
@@ -378,11 +404,26 @@ img {
   line-height: 20px;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .contacts__heading {
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 
 .contacts__adress {
   margin: 0;
   color: #444444;
   line-height: 20px;
+}
+@media (min-width: 768px) {
+  .contacts__adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+  }
 }
 
 .contacts__map {
@@ -390,6 +431,20 @@ img {
   width: 100%;
   height: 362px;
   border: none;
+}
+@media (min-width: 768px) {
+  .contacts__map {
+    height: 400px;
+  }
+}
+@media (min-width: 1300px) {
+  .contacts__map {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 .container {
@@ -713,8 +768,8 @@ img {
 
 @media (min-width: 1300px) {
   .form__group--contacts,
-.form__group--comments,
-.form__group--additional {
+  .form__group--comments,
+  .form__group--additional {
     grid-column: 1/-1;
   }
 }
@@ -1277,8 +1332,7 @@ img {
 }
 
 .switcher__bar {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
 }
 @media (max-width: 767px) {
@@ -1307,8 +1361,7 @@ img {
 }
 
 .switcher__bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   height: 30px;
   width: 30px;
   margin-top: -12px;
@@ -1349,5 +1402,4 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
