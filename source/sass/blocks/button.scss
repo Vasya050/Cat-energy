@@ -1,6 +1,7 @@
 .button {
   padding: 11px 12px;
   display: inline-block;
+  text-align: center;
   color: $color-white;
   background-color: $color-primary-500;
   border: none;
@@ -24,7 +25,28 @@
   }
 }
 
+.button--large {
+  font-size: 16px;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 20px;
+  }
+}
+
 .button--secondary {
   color: $color-gray-700;
   background-color: $color-gray-50;
+
+  &:hover {
+    background-color: $color-gray-100;
+  }
+
+  &:active {
+    color: rgba($color-gray-700, 0.3);
+    background-color: $color-gray-100;
+  }
+}
+
+.button--fixed {
+  font-size: 16px;
 }

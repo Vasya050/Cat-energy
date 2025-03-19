@@ -53,16 +53,16 @@
   color: $color-black;
   text-decoration: none;
 
+  @media (min-width: $breakpoint-medium) {
+    padding: 17px;
+  }
+
   &:link:hover {
     opacity: 0.6;
   }
 
   &:link:active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $breakpoint-medium) {
-    padding: 17px;
   }
 }
 

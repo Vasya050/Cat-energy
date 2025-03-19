@@ -27,11 +27,17 @@
     &::before {
       content: "";
       position: absolute;
-      background-color: $color-gray-100;
-      width: 100vw;
-      height: 1px;
       top: 0;
       left: calc(50% - 50vw);
+      width: 100vw;
+      height: 1px;
+      background-color: $color-gray-100;
     }
+  }
+}
+
+.catalog-list__item--show-more {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 80px;
   }
 }
