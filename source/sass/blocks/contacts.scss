@@ -1,4 +1,8 @@
 .contacts {
+  &:not(.contacts--main) {
+    background-color: $color-gray-50;
+  }
+
   @media (min-width: $breakpoint-large) {
     position: relative;
     z-index: 0;
@@ -8,6 +12,7 @@
     grid-template-columns: 1220px;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
   }
 }
 

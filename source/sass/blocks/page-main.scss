@@ -18,7 +18,13 @@
 }
 
 .page-main__subheading {
+  margin: 0;
   font-family: $font-heading;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
