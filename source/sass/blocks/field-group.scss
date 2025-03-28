@@ -1,17 +1,48 @@
 .field-group {
-  padding: 20px 0;
+  padding: 0;
   border: none;
 }
 
+.field-group--target {
+  padding: 21px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 25px;
+  }
+}
+
 .field-group__heading {
+  margin-bottom: 35px;
+  padding: 0;
+  display: flex;
+  float: left;
   font-family: $font-heading;
+  font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  font-size: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: $color-gray-500;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+    width: min-content;
+    background-color: $color-white;
+    margin-left: -22px;
+  }
 }
 
 .field-group__list {
+  margin: 0;
   padding: 0;
+  clear: both;
   list-style: none;
 }
 
@@ -33,5 +64,19 @@
   @media(min-width: $breakpoint-large) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.field-group__item {
+  & + & {
+    margin-top: 14px;
+
+    @media (min-width: $breakpoint-medium) {
+      margin-top: 20px;
+
+      .field-group--target & {
+        margin-top: 13px;
+      }
+    }
   }
 }
