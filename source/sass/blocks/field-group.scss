@@ -27,6 +27,7 @@
     right: 0;
     left: 0;
     height: 2px;
+    margin-top: 16px;
     background-color: $color-primary-500;
   }
 
@@ -34,9 +35,34 @@
     position: relative;
     z-index: 1;
     width: min-content;
-    background-color: $color-white;
     margin-left: -22px;
+    padding: 0 22px;
+    background-color: $color-white;
   }
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      margin-top: 22px;
+    }
+
+    span {
+      width: auto;
+      margin-left: -42px;
+      padding: 0 42px;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 72px;
+  }
+}
+
+.field-group__field {
+  clear: both;
+  width: 100%;
 }
 
 .field-group__list {
@@ -59,10 +85,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    row-gap: 32px;
   }
 
   @media(min-width: $breakpoint-large) {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -74,8 +100,18 @@
     @media (min-width: $breakpoint-medium) {
       margin-top: 20px;
 
+      .field-group__list--additional & {
+        margin-top: 0;
+      }
+
       .field-group--target & {
         margin-top: 13px;
+      }
+    }
+
+    @media (min-width: $breakpoint-large) {
+      .field-group__list--contacts & {
+        margin-top: 0;
       }
     }
   }
