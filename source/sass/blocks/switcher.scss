@@ -83,7 +83,6 @@
 }
 
 .switcher__bar::-moz-range-thumb {
-  appearance: none;
   height: 30px;
   width: 30px;
   padding: 0;
@@ -123,11 +122,13 @@
     cursor: pointer;
 
     &:hover {
-      box-shadow: 0 0 0 1px $color-gray-250, 0 2px 4px rgba($color-black, $alpha: 0.19);
+      box-shadow: 0 0 0 1px $color-gray-250, 0 2px 4px rgba($color-black, 0.19);
     }
 
     &:active {
-      box-shadow: 0 0 0 1px $color-primary-500, 0 3px 5px rgba($color-black, $alpha: 0.2);
+      box-shadow: 
+        0 0 0 1px $color-primary-500, 
+        0 3px 5px rgba($color-black, $alpha: 0.2);
     }
 }
 

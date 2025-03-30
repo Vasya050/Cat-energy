@@ -1664,7 +1664,7 @@ img {
 }
 @media (max-width: 767px) {
   .process__item + .process__item {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 }
 .process__item::before {
@@ -1723,7 +1723,7 @@ img {
     background-color: #63a63b;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image: url("../img/background/promo-small.jpg"), linear-gradient(#63a63b, #63a63b 302px, #ffffff 302px);
+    background-image: url("../img/background/promo-small.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
   }
 }
 @media (min-width: 768px) {
@@ -1957,11 +1957,11 @@ img {
 }
 
 .social {
-  list-style: none;
   padding: 12px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
 }
 @media (min-width: 768px) {
   .social {
@@ -1986,8 +1986,7 @@ img {
 .social__link:active {
   color: rgba(104, 183, 56, 0.3);
 }
-
-svg {
+.social__link svg {
   display: block;
 }
 
@@ -2077,7 +2076,6 @@ svg {
 }
 
 .switcher__bar::-moz-range-thumb {
-  appearance: none;
   height: 30px;
   width: 30px;
   padding: 0;

@@ -1,9 +1,9 @@
 .social {
-    list-style: none;
     padding: 12px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    list-style: none;
 
     @media (min-width: $breakpoint-medium) {
         padding: 0;
@@ -28,8 +28,8 @@
     &:active {
         color: rgba($color-primary-500, .3);
     }
-}
 
-svg {
-    display: block;
+    svg {
+        display: block;
+    }
 }
