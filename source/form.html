@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat energy: Подбор программы</title>
-  <link rel="icon" href="./img/favicon.png" sizes="32x32">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon/180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -15,7 +18,11 @@
     <nav class="page-header__nav">
       <div class="page-header__bar">
         <a class="page-header__logo logo" href="./index.html">
-          <img class="logo__image" src="./img/logo-image.svg" width="34" height="38" alt="Cat energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="./img/logo-image-large.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-image-medium.svg">
+            <img class="logo__image" src="./img/logo-image-small.svg" width="34" height="38" alt="Cat energy">
+          </picture>
           <img class="logo__sign" src="./img/logo-sign.svg" width="101" height="19" alt="" aria-hidden="true">
         </a>
 
@@ -182,7 +189,7 @@
       <div class="contacts__container">
         <p class="contacts__heading">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__adress">
-          <span>ул. Большая Конюшенная, д. 19/8</span> 
+          <span>ул. Большая Конюшенная, д. 19/8</span>
           <span>Санкт-Петербург</span>
         </p>
       </div>
@@ -194,7 +201,7 @@
   <footer class="page__footer page-footer">
     <div class="page-footer__container container">
       <a class="page-footer__logo logo logo--footer" href="">
-        <img class="logo__image" src="./img/logo-sign.svg" width="128" height="24" alt="Cat Energy">
+        <img class="logo__sign" src="./img/logo-sign.svg" width="128" height="24" alt="Cat Energy">
       </a>
 
       <ul class="page-footer__social social">

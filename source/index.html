@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat energy - Функциональное питание для котов</title>
-    <link rel="icon" href="./img/favicon.png" sizes="32x32">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
   </head>
 
   <body class="page__body">
@@ -15,7 +18,11 @@
       <nav class="page-header__nav page-header__nav--main">
         <div class="page-header__bar">
           <a class="page-header__logo logo">
-            <img class="logo__image" src="./img/logo-image.svg" width="34" height="38" alt="Cat energy">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/logo-image-large.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-image-medium.svg">
+              <img class="logo__image" src="./img/logo-image-small.svg" width="34" height="38" alt="Cat energy">
+            </picture>
             <img class="logo__sign" src="./img/logo-sign.svg" width="101" height="19" alt="" aria-hidden="true">
           </a>
 
@@ -46,7 +53,11 @@
           <p class="promo__text">
             Занялся собой? Займись котом!
           </p>
-          <img class="promo__image" src="./img/index-can-mobile.png" width="280" height="270" alt="Банка куринного корма Cat Energy PRO 500 г">
+          <picture>
+            <source @media="(min-width: 1300px)" srcset="./img/index-can-large.png 1x, ./img/index-can-large@2x.png 2x">
+            <source @media="(min-width: 768px)" srcset="./img/index-can-medium.jpg 1x, ./img/index-can-medium@2x.jpg 2x">
+            <img class="promo__image" src="./img/index-can-small.png" srcset="./img/index-can-small@2x.png 2x" width="280" height="270" alt="Банка куринного корма Cat Energy PRO 500 г">
+          </picture>
           <a class="promo__button button" href="./form.html">Подобрать программу</a>
         </div>
       </header>
@@ -54,6 +65,7 @@
       <section class="page-main__section catalog-sections">
         <div class="catalog-section__container container">
           <h2 class="visually-hidden">Каталог программы</h2>
+
           <article class="catalog-sections__item">
             <h3 class="catalog-sections__heading catalog-sections__heading--slim">Похудение</h3>
             <p class="catalog-sections__text">
@@ -61,6 +73,7 @@
             </p>
             <a class="catalog-sections__link" href="#">Каталог slim</a>
           </article>
+
           <article class="catalog-sections__item">
             <h3 class="catalog-sections__heading catalog-sections__heading--pro">Набор массы</h3>
             <p class="catalog-sections__text">
@@ -122,10 +135,16 @@
           <div class="example__view">
             <div class="example__images">
               <div class="example__image example__image--before example__image--active">
-                <img src="./img/before-mobile.png" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+                <picture>
+                  <source @media="(min-width: 768px)" srcset="./img/cat-fat-medium.png 1x, ./img/cat-fat-medium@2x.png 2x">
+                  <img src="./img/cat-fat-small.png" srcset="./img/cat-fat-small@2x.png 2x" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+                </picture>
               </div>
               <div class="example__image example__image--after">
-                <img src="./img/after-mobile.png" width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+                <picture>
+                  <source @media="(min-width: 768px)" srcset="./img/cat-skinny-medium.png 1x, ./img/cat-skinny-small@2x.png">
+                  <img src="./img/cat-skinny-small.png" srcset="./img/cat-skinny-small@2x.png 2x" width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+                </picture>
               </div>
             </div>
 
@@ -158,7 +177,7 @@
     <footer class="page__footer page-footer">
       <div class="page-footer__container container">
         <a class="page-footer__logo logo logo--footer" href="">
-          <img class="logo__image" src="./img/logo-sign.svg" width="128" height="24" alt="Cat Energy">
+          <img class="logo__sign" src="./img/logo-sign.svg" width="128" height="24" alt="Cat Energy">
         </a>
 
         <ul class="page-footer__social social">
