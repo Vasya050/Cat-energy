@@ -5,7 +5,7 @@
 
   @media (max-width: $breakpoint-small-down) {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "img link"
     "img list"
     "button button";
@@ -14,7 +14,7 @@
   @media(min-width: $breakpoint-medium) {
     padding: 8px 38px 40px;
     grid-template-rows: 200px auto;
-    grid-template-areas: 
+    grid-template-areas:
     "img"
     "link"
     "list"
@@ -55,10 +55,12 @@
   }
 }
 
+.card__picture,
 .card__img {
   grid-area: img;
   align-self: center;
   justify-self: center;
+  width: auto;
 }
 
 .card__list {
