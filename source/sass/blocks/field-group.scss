@@ -73,7 +73,7 @@
 }
 
 .field-group__list--contacts {
-  @media(min-width: $breakpoint-large) {
+  @media (min-width: $breakpoint-large) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -81,14 +81,14 @@
 }
 
 .field-group__list--additional {
-  @media(min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-medium) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     row-gap: 32px;
   }
 
-  @media(min-width: $breakpoint-large) {
+  @media (min-width: $breakpoint-large) {
     grid-template-columns: repeat(4, 1fr);
   }
 }

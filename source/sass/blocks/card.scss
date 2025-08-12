@@ -6,19 +6,19 @@
   @media (max-width: $breakpoint-small-down) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "img link"
-    "img list"
-    "button button";
+      "img link"
+      "img list"
+      "button button";
   }
 
-  @media(min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-medium) {
     padding: 8px 38px 40px;
     grid-template-rows: 200px auto;
     grid-template-areas:
-    "img"
-    "link"
-    "list"
-    "button";
+      "img"
+      "link"
+      "list"
+      "button";
     background-color: $color-gray-50;
     background-image: linear-gradient(to bottom, $color-white 80px, $color-gray-50 80px);
   }

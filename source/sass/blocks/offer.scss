@@ -28,8 +28,8 @@
 
     @media (min-resolution: 2dppx) {
       background-image:
-      url("../../img/icons/gift.svg"),
-      url("../../img/background/catback-medium@2x.jpg");
+        url("../../img/icons/gift.svg"),
+        url("../../img/background/catback-medium@2x.jpg");
     }
   }
 
@@ -37,14 +37,14 @@
     padding: 178px 40px 44px;
     background-position: 50% 50px, 50% 50%;
     background-image:
-    url("../../img/icons/gift.svg"),
-    url("../../img/background/catback-large.jpg");
+      url("../../img/icons/gift.svg"),
+      url("../../img/background/catback-large.jpg");
     text-align: center;
 
     @media (min-resolution: 2dppx) {
       background-image:
-      url("../../img/icons/gift.svg"),
-      url("../../img/background/catback-large@2x.jpg");
+        url("../../img/icons/gift.svg"),
+        url("../../img/background/catback-large@2x.jpg");
     }
   }
 }

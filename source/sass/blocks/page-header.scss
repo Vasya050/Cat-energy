@@ -28,14 +28,14 @@
 
 .page-header__bar {
   @media (max-width: $breakpoint-small-down) {
-      width: 320px;
-      margin: 0 auto;
-      padding: 12px 20px 13px;
-      display: grid;
-      grid-template-columns: 34px 1fr 34px;
-      gap: 16px;
-      align-items: center;
-    }
+    width: 320px;
+    margin: 0 auto;
+    padding: 12px 20px 13px;
+    display: grid;
+    grid-template-columns: 34px 1fr 34px;
+    gap: 16px;
+    align-items: center;
+  }
 }
 
 .page-header__logo {
@@ -80,11 +80,11 @@
     .page-header__nav--closed & {
       display: block;
     }
+
     .page-header__nav--opened & {
       display: block;
       background-image: url("../img/icons/close.svg");
     }
-
   }
 
   @media (min-width: $breakpoint-medium) {

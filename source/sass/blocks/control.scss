@@ -94,7 +94,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-medium){
+  @media (min-width: $breakpoint-medium) {
     grid-template-columns: 40px 1fr;
     gap: 20px;
     font-size: 20px;
