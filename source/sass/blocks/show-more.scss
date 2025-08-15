@@ -3,14 +3,14 @@
   text-align: center;
   background-position: 50% 25px;
   background-repeat: no-repeat;
-  background-image: url("../img/icons/plus-small.svg");
+  background-image: url("../img/ico/plus-small.svg");
 
   @media (min-width: $breakpoint-medium) {
     padding: 160px 38px 38px;
     display: flex;
     flex-direction: column;
     background-position: 50% 52px;
-    background-image: url("../img/icons/plus-large.svg");
+    background-image: url("../img/ico/plus-large.svg");
     border: 1px solid $color-gray-50;
   }
 }

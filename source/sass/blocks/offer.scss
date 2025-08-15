@@ -6,7 +6,7 @@
   background-size: auto, cover;
   background-position: 50% 58px, 50% 50%;
   background-image:
-    url("../img/icons/gift.svg"),
+    url("../img/ico/gift.svg"),
     url("../img/background/catback-small.jpg");
   text-align: center;
   font-size: 16px;
@@ -14,7 +14,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image:
-      url("../img/icons/gift.svg"),
+      url("../img/ico/gift.svg"),
       url("../img/background/catback-small@2x.jpg");
   }
 
@@ -22,14 +22,14 @@
     padding: 70px 120px 70px 422px;
     background-position: 77px 50%, 50% 50%;
     background-image:
-      url("../../img/icons/gift.svg"),
-      url("../../img/background/catback-medium.jpg");
+      url("../img/ico/gift.svg"),
+      url("../img/background/catback-medium.jpg");
     text-align: left;
 
     @media (min-resolution: 2dppx) {
       background-image:
-        url("../../img/icons/gift.svg"),
-        url("../../img/background/catback-medium@2x.jpg");
+        url("../img/ico/gift.svg"),
+        url("../img/background/catback-medium@2x.jpg");
     }
   }
 
@@ -37,14 +37,14 @@
     padding: 178px 40px 44px;
     background-position: 50% 50px, 50% 50%;
     background-image:
-      url("../../img/icons/gift.svg"),
-      url("../../img/background/catback-large.jpg");
+      url("../img/ico/gift.svg"),
+      url("../img/background/catback-large.jpg");
     text-align: center;
 
     @media (min-resolution: 2dppx) {
       background-image:
-        url("../../img/icons/gift.svg"),
-        url("../../img/background/catback-large@2x.jpg");
+        url("../img/ico/gift.svg"),
+        url("../img/background/catback-large@2x.jpg");
     }
   }
 }

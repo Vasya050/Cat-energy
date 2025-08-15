@@ -73,7 +73,7 @@
   background-position: 50% 50%;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-image: url("../img/icons/burger.svg");
+  background-image: url("../img/ico/burger.svg");
   border: none;
 
   @media (max-width: $breakpoint-small-down) {
@@ -83,7 +83,7 @@
 
     .page-header__nav--opened & {
       display: block;
-      background-image: url("../img/icons/close.svg");
+      background-image: url("../img/ico/close.svg");
     }
   }
 
