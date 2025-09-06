@@ -45,6 +45,7 @@
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 0;
     grid-template-columns: 1fr 82px;
+    align-items: end;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -71,6 +72,10 @@
       text-align: left;
     }
   }
+}
+
+.card-row__definition--price {
+  text-transform: uppercase;
 }
 
 .card-row__button {

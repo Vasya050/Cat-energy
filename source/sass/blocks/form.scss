@@ -1,16 +1,27 @@
 .form {
   overflow: hidden;
 
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 28px;
+  }
+
   @media (min-width: $breakpoint-large) {
     padding-top: 26px;
   }
 }
 
 .form__container {
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   @media (min-width: $breakpoint-large) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -21,7 +32,7 @@
     margin-top: 25px;
 
     @media (min-width: $breakpoint-medium) {
-      margin-top: 70px;
+      margin-top: 71px;
     }
 
     @media (min-width: $breakpoint-large) {
@@ -29,6 +40,14 @@
         margin-top: 0;
       }
     }
+  }
+}
+
+.form__group +.form__group--additional {
+  margin-top: 22px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 64px;
   }
 }
 
@@ -67,7 +86,10 @@
   }
 
   @media (min-width: $breakpoint-large) {
+    margin-top: 61px;
+    margin-bottom: 82px;
     grid-column: 1 / -1;
+    gap: 80px;
   }
 }
 

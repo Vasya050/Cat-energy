@@ -10,6 +10,8 @@
     <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicon/180.png">
     <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   </head>
 
   <body class="page__body">
@@ -46,7 +48,7 @@
 
     <main class="page__main page-main">
 
-      <header class="page-main__header promo">
+      <header class="page-main__header page-main__header--index promo">
         <div class="promo__container container">
           <h1 class="promo__heading">Функциональное питание для котов</h1>
           <p class="promo__text">
@@ -57,11 +59,11 @@
             <source media="(min-width:768px)" type="image/webp" srcset="./img/index-can-medium.webp 1x, ./img/index-can-medium@2x.webp 2x">
             <source type="image/webp" srcset="./img/index-can-small.webp 1x, ./img/index-can-small@2x.webp 2x">
 
-            <source @media="(min-width: 1300px)" srcset="./img/index-can-large.png 1x, ./img/index-can-large@2x.png 2x">
-            <source @media="(min-width: 768px)" srcset="./img/index-can-medium.jpg 1x, ./img/index-can-medium@2x.jpg 2x">
+            <source media="(min-width: 1300px)" srcset="./img/index-can-large.png 1x, ./img/index-can-large@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/index-can-medium.jpg 1x, ./img/index-can-medium@2x.jpg 2x">
             <img class="promo__image" src="./img/index-can-small.png" srcset="./img/index-can-small@2x.png 2x" width="280" height="270" alt="Банка куринного корма Cat Energy PRO 500 г">
           </picture>
-          <a class="promo__button button" href="./form.html">Подобрать программу</a>
+          <a class="promo__button button button--promo" href="./form.html">Подобрать программу</a>
         </div>
       </header>
 
@@ -139,19 +141,19 @@
             <div class="example__images">
               <div class="example__image example__image--before example__image--active">
                 <picture>
-                  <source media="(min-width: 768px)" type="image/webp" srcset=".\img\cat-fat-medium.webp 1x, .\img\cat-fat-medium@2x.webp 2x">
-                  <source type="image/webp" srcset=".\img\cat-fat-small.webp 1x, .\img\cat-fat-small@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-fat-medium.webp 1x, ./img/cat-fat-medium@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/cat-fat-small.webp 1x, ./img/cat-fat-small@2x.webp 2x">
 
-                  <source @media="(min-width: 768px)" srcset="./img/cat-fat-medium.png 1x, ./img/cat-fat-medium@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/cat-fat-medium.png 1x, ./img/cat-fat-medium@2x.png 2x">
                   <img src="./img/cat-fat-small.png" srcset="./img/cat-fat-small@2x.png 2x" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
                 </picture>
               </div>
               <div class="example__image example__image--after">
                 <picture>
-                  <source media="(min-width: 768px)" type="image/webp" srcset=".\img\cat-skinny-medium.webp 1x, .\img\cat-skinny-medium@2x.webp 2x">
-                  <source type="image/webp" srcset=".\img\cat-skinny-small.webp 1x, .\img\cat-skinny-small@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-skinny-medium.webp 1x, ./img/cat-skinny-medium@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/cat-skinny-small.webp 1x, ./img/cat-skinny-small@2x.webp 2x">
 
-                  <source @media="(min-width: 768px)" srcset="./img/cat-skinny-medium.png 1x, ./img/cat-skinny-medium@2x.png">
+                  <source media="(min-width: 768px)" srcset="./img/cat-skinny-medium.png 1x, ./img/cat-skinny-medium@2x.png 2x">
                   <img src="./img/cat-skinny-small.png" srcset="./img/cat-skinny-small@2x.png 2x" width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
                 </picture>
               </div>

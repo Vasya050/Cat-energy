@@ -23,8 +23,13 @@
     }
   }
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-large) {
+    padding-top: 74px;
     padding-bottom: 86px;
+
+    &::before {
+      top: 97px;
+    }
   }
 }
 
@@ -58,6 +63,7 @@
   }
 
   @media (min-width: $breakpoint-large) {
+    margin-bottom: 80px;
     margin-left: -40px;
     padding: 0 35px 0 40px;
     grid-column: 1 / -1;
@@ -71,7 +77,7 @@
   list-style: none;
 
   @media (min-width: $breakpoint-medium) {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
     border: 1px solid $color-gray-250;
   }
 

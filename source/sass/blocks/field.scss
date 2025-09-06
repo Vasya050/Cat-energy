@@ -12,6 +12,7 @@
   text-transform: uppercase;
 
   @media (min-width: $breakpoint-medium) {
+    gap: 18px;
     font-size: 20px;
   }
 }
@@ -55,10 +56,23 @@
   @media (min-width: $breakpoint-medium) {
     padding: 10px 18px;
     font-size: 20px;
+    line-height: 30px;
 
     .field--icon & {
       padding-right: 50px;
     }
+  }
+}
+
+.field__input--textarea {
+  padding-bottom: 18px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-bottom: 21px;
   }
 }
 

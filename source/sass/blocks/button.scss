@@ -27,9 +27,18 @@
 
 .button--large {
   font-size: 16px;
+  line-height: 1;
 
   @media (min-width: $breakpoint-medium) {
     font-size: 20px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+}
+
+.button--promo {
+  @media (min-width: $breakpoint-medium) {
+    padding: 17px 26px;
   }
 }
 
@@ -49,4 +58,8 @@
 
 .button--fixed {
   font-size: 16px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 11px 12px;
+  }
 }

@@ -1,9 +1,9 @@
 .page-footer {
-  padding: 20px 0 22px;
+  padding: 31px 0 25px;
   background-color: $color-gray-50;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 58px 0 55px;
+    padding: 58px 0 50px;
   }
 }
 
@@ -25,8 +25,13 @@
   margin: 0;
 
   @media (max-width: $breakpoint-small-down) {
+    margin-bottom: 22px;
     border-top: 1px solid $color-gray-200;
     border-bottom: 1px solid $color-gray-200;
-    margin-bottom: 22px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: -4px;
+    margin-right: 8px;
   }
 }

@@ -4,6 +4,14 @@
   @media (max-width: $breakpoint-small-down) {
     border-bottom: 1px solid $color-gray-100;
   }
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 13px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 16px;
+  }
 }
 
 .catalog-list__container {

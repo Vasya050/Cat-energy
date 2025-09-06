@@ -7,6 +7,7 @@
 
     @media (min-width: $breakpoint-medium) {
       grid-template-columns: 61px 1fr;
+      gap: 11px;
     }
 
     @media (min-width: $breakpoint-large) {
@@ -49,9 +50,10 @@
   }
 }
 
-
 .logo__sign {
-  width: 101px;
+  width: 102px;
+  margin-top: 4px;
+  margin-right: 2px;
   justify-self: center;
 
   @media (min-width: $breakpoint-medium) {
